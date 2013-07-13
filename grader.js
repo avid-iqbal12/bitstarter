@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var fs = require('fs');
 var program = require('commander');
 var cheerio = require('cheerio');
@@ -16,14 +17,14 @@ var assertFileExists = function(infile) {
 };
 
 var cheerioHtmlFile = function(foobar) {
-    return cheerio.load(fs.readFileSync(htmlfile));
+    return cheerio.load(fs.readFileSync("index.html")
     rest.get(apiurl).on('complete', foobar);
 
 };
 
 
 var loadChecks = function(checksfile) {
-    return JSON.parse(fs.readFileSync(checksfile));
+    return JSON.parse(fs.readFileSync("checks.json");
 };
 
 var checkHtmlFile = function(htmlfile, checksfile) {
