@@ -17,14 +17,14 @@ var assertFileExists = function(infile) {
 };
 
 var cheerioHtmlFile = function(foobar) {
-    return cheerio.load(fs.readFileSync("index.html")
+    return cheerio.load(fs.readFileSync("index.html"));
     rest.get(apiurl).on('complete', foobar);
 
 };
 
 
 var loadChecks = function(checksfile) {
-    return JSON.parse(fs.readFileSync("checks.json");
+    return JSON.parse(fs.readFileSync(checksfile));
 };
 
 var checkHtmlFile = function(htmlfile, checksfile) {
